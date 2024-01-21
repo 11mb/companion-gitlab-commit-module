@@ -1,15 +1,12 @@
 module.exports = function (self) {
 	self.setActionDefinitions({
 		sample_action: {
-			name: 'My First Action',
+			name: 'Update file',
 			options: [
 				{
-					id: 'num',
-					type: 'number',
-					label: 'Test',
-					default: 5,
-					min: 0,
-					max: 100,
+					id: 'file_path',
+					type: 'string',
+					label: 'File Path',
 				},
 			],
 			callback: async (event) => {
