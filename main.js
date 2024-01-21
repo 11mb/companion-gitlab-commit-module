@@ -38,6 +38,12 @@ class ModuleInstance extends InstanceBase {
 			},
 			{
 				type: 'textinput',
+				id: 'project_id',
+				label: 'Project ID',
+				width: 20,
+			},
+			{
+				type: 'textinput',
 				id: 'branch',
 				label: 'Branch',
 				width: 25,
