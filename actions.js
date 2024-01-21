@@ -1,3 +1,5 @@
+import Rest from './Rest.js'
+
 module.exports = function (self) {
 	self.setActionDefinitions({
 		sample_action: {
