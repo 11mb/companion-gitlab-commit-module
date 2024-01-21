@@ -8,6 +8,11 @@ module.exports = function (self) {
 					type: 'string',
 					label: 'File Path',
 				},
+				{
+					id: 'content',
+					type: 'string',
+					label: 'New contents',
+				},
 			],
 			callback: async (event) => {
 				console.log('Hello world!', event.options.num)
