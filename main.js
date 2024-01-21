@@ -32,10 +32,9 @@ class ModuleInstance extends InstanceBase {
 		return [
 			{
 				type: 'textinput',
-				id: 'host',
-				label: 'Target IP',
-				width: 8,
-				regex: Regex.IP,
+				id: 'token',
+				label: 'Private Token',
+				width: 30,
 			},
 			{
 				type: 'textinput',
