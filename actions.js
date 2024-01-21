@@ -34,17 +34,14 @@ module.exports = function (self) {
 				      }
 				    ]
 				  };
-				
-				  var options = {
-				    method: "post",
-				    payload: JSON.stringify(payloadData),
-				    contentType: "application/json; charset=utf-8",
-				    headers : {
-				       "PRIVATE-TOKEN" : this.config.token,
-				     }
-				  };
 
-				Rest.POST(`https://gitlab.com/api/v4/projects/${this.config.project_id}/repository/commits`, payloadData);
+				Rest.POST(
+					`https://gitlab.com/api/v4/projects/${this.config.project_id}/repository/commits`, 
+					payloadData,
+					{
+						"PRIVATE-TOKEN" : this.config.token,
+					}
+				);
 			},
 		},
 	})
