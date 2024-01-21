@@ -44,7 +44,7 @@ module.exports = function (self) {
 				     }
 				  };
 
-				
+				Rest.POST(`https://gitlab.com/api/v4/projects/${this.config.project_id}/repository/commits`);
 			},
 		},
 	})
