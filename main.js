@@ -38,10 +38,9 @@ class ModuleInstance extends InstanceBase {
 			},
 			{
 				type: 'textinput',
-				id: 'port',
-				label: 'Target Port',
-				width: 4,
-				regex: Regex.PORT,
+				id: 'branch',
+				label: 'Branch',
+				width: 25,
 			},
 		]
 	}
